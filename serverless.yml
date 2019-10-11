@@ -50,7 +50,7 @@ functions:
           path: notes
           method: post
           cors: true
-          authorizer: aws_iam
+          authorizer: arn:aws:cognito-idp:us-east-1:260989564413:userpool/us-east-1_U63SyuTwo
   get:
     # Defines an HTTP API endpoint that calls the main function in get.js
     # - path: url path is /notes/{id}
@@ -61,7 +61,7 @@ functions:
           path: notes/{id}
           method: get
           cors: true
-          authorizer: aws_iam
+          authorizer: arn:aws:cognito-idp:us-east-1:260989564413:userpool/us-east-1_U63SyuTwo
   list:
     # Defines an HTTP API endpoint that calls the main function in list.js
     # - path: url path is /notes
@@ -72,7 +72,7 @@ functions:
           path: notes
           method: get
           cors: true
-          authorizer: aws_iam
+          authorizer: arn:aws:cognito-idp:us-east-1:260989564413:userpool/us-east-1_U63SyuTwo
   update:
     # Defines an HTTP API endpoint that calls the main function in update.js
     # - path: url path is /notes/{id}
@@ -83,7 +83,7 @@ functions:
           path: notes/{id}
           method: put
           cors: true
-          authorizer: aws_iam
+          authorizer: arn:aws:cognito-idp:us-east-1:260989564413:userpool/us-east-1_U63SyuTwo
   delete:
     # Defines an HTTP API endpoint that calls the main function in delete.js
     # - path: url path is /notes/{id}
@@ -94,7 +94,7 @@ functions:
           path: notes/{id}
           method: delete
           cors: true
-          authorizer: aws_iam
+          authorizer: arn:aws:cognito-idp:us-east-1:260989564413:userpool/us-east-1_U63SyuTwo
   billing:
     # Defines an HTTP API endpoint that calls the main function in billing.js
     # - path: url path is /billing
@@ -105,7 +105,7 @@ functions:
           path: billing
           method: post
           cors: true
-          authorizer: aws_iam
+          authorizer: arn:aws:cognito-idp:us-east-1:260989564413:userpool/us-east-1_U63SyuTwo
           
 # Create our resources with separate CloudFormation templates
 resources:
